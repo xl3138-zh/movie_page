@@ -1,0 +1,68 @@
+h1{
+    text-align: center;    
+    color: rgb(236, 200, 169);
+    text-shadow: 2px 2px #05192f;
+    font-size: 60px;
+    font-family: Cursive;
+}
+
+h2{
+    color: rgb(185, 182, 179);
+    text-shadow: 2px 2px #05192f;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+h4{
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px #05192f;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+ul li{
+    list-style-type: square;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+
+.movies {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px #311201;
+}
+body{
+    width: 80%;    
+    margin: auto;    
+    padding: 30px;    
+    color:rgb(113, 112, 110)
+/*    font-size: small;    &/
+/*  font-family: fantasy; */
+    font-family: Monospace;
+/*    background-image: url("timothy-eberly-dTLlhgeEJWg-unsplash.jpg");    
+*/
+    background-image: url("timothy-eberly-small.jpg");    
+    background-size: cover;   
+}
+
+
+button{
+    color: white;
+    background-color: rgb(85, 24, 1);
+    padding: 10px;
+    font-family: Monospace;
+    font-size: large;
+    font-weight: bold;
+}
+
+a:link {
+    background-color: yellow;
+}  
+a:visited {
+    background-color: rgb(104, 133, 133);
+}
+a:hover {
+    background-color: rgb(187, 236, 187);
+}  
+a:active {
+    background-color: rgb(112, 211, 55);
+}  

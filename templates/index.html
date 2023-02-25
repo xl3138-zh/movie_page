@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Recommender </title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+
+<body>
+  <img src="https://storage.googleapis.com/afs-prod/media/e53811360eed4b8ba26b5f635d703a7c/3000.jpeg" 
+    width="200px" height="200px">
+  <h1>Welcome to the movie page by {{ name }}</h1>
+  <h2>Let's watch some movie tonight! </h3>
+
+  <form action="/recommender">
+    <select name="algo">    
+      <option value="random">Random</option>
+      <option value="rating">Highest ratings</option>    
+      <option value="nmf"> Based on your taste if you tell me 3 movies you've watched</option> 
+    </select> 
+    <br><br> 
+    {% for indx in range(3) %}    
+      <input type="text" name="title" placeholder="Enter movie name"
+        required list="movie_lst">
+      <input type="number" name="Ratings" placeholder="1-5" min="1" max="5" required>
+      <br><br>    
+    {% endfor %}           
+    <button type="submit">Show Recommentions</button>
+  </form>
+  <datalist id="movie_lst">    
+    {%for mov in movies%}    
+    <option value="{{mov}}"></option>    
+    {%endfor%}       
+  </datalist>
+  
+</body>
+
+</html>
