@@ -4,20 +4,34 @@ h1{
     text-shadow: 2px 2px #05192f;
     font-size: 60px;
     font-family: Cursive;
+ /*   margin-top: 80px;
+ */
+    margin-bottom: 100px;
 }
 
 h2{
     color: rgb(185, 182, 179);
     text-shadow: 2px 2px #05192f;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+h3{
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px #05192f;
+    font-size: 20px;
+    font-family: monospace sans-serif;
+}
+
+.announce {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px #05192f;
     font-size: 20px;
     font-family: sans-serif;
 }
 
-h4{
-    color: rgb(255, 255, 255);
-    text-shadow: 2px 2px #05192f;
-    font-size: 14px;
-    font-family: sans-serif;
+p {
+    color: white
 }
 
 ul li{
@@ -34,7 +48,7 @@ body{
     width: 80%;    
     margin: auto;    
     padding: 30px;    
-    color:rgb(113, 112, 110)
+    color:rgb(215, 212, 208)
 /*    font-size: small;    &/
 /*  font-family: fantasy; */
     font-family: Monospace;
@@ -50,7 +64,7 @@ button{
     background-color: rgb(85, 24, 1);
     padding: 10px;
     font-family: Monospace;
-    font-size: large;
+    font-size: very large;
     font-weight: bold;
 }
 

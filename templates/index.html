@@ -17,16 +17,26 @@
   <h2>Let's watch some movie tonight! </h3>
 
   <form action="/recommender">
+    <p class="announce"> How would you like the recommendations to be? </p>
     <select name="algo">    
       <option value="random">Random</option>
       <option value="rating">Highest ratings</option>    
       <option value="nmf"> Based on your taste if you tell me 3 movies you've watched</option> 
     </select> 
     <br><br> 
-    {% for indx in range(3) %}    
-      <input type="text" name="title" placeholder="Enter movie name"
+    <p class="announce"> Please rate three movies. Choose movie title on the left, 
+      and rating (1 to 5) on the right. </p>
+    <p class="small">  Yes, for a mysterious reason you still need to do this even if you have chosen 
+      Random or Highest ratings. </p>
+    {% for indx in range(3) %}
+<!--      <label for="title">Movie title:</label>
+-->
+      <input type="text" id="title" name="title" size="50" placeholder="Enter/choose movie name"
         required list="movie_lst">
-      <input type="number" name="Ratings" placeholder="1-5" min="1" max="5" required>
+ <!--      <label for="rating"> Rating:</label>
+ -->
+      <input type="number" id="rating" name="Ratings" size="2" placeholder="1-5" 
+        min="1" max="5" required>
       <br><br>    
     {% endfor %}           
     <button type="submit">Show Recommentions</button>
