@@ -1,11 +1,51 @@
+
+/* Create two equal columns that floats next to each other */
+.column-l {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    vertical-align: top;
+    /*   height: 300px; /* Should be removed. Only for demonstration */
+  }
+.column-r {
+    float: right;
+    width: 80%;
+    padding: 10px;
+    vertical-align: top;
+/*    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/* items side by side */
+  .flex-parent-element {
+    display: flex;
+    width: 50%;
+  }
+  
+  .flex-child-element {
+    flex: 1;
+    border: 2px solid blueviolet;
+    margin: 10px;
+  }
+  
+  .flex-child-element:first-child {
+    margin-right: 20px;
+  }
+  
+
 h1{
     text-align: center;    
-    color: rgb(236, 200, 169);
+    color: rgb(193, 247, 234);
     text-shadow: 2px 2px #05192f;
-    font-size: 60px;
+    font-size: 50px;
     font-family: Cursive;
- /*   margin-top: 80px;
- */
+    margin-top: 0px;
     margin-bottom: 100px;
 }
 
@@ -43,12 +83,13 @@ ul li{
 .movies {
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px #311201;
+    font-size: 20px;
 }
 body{
     width: 80%;    
     margin: auto;    
     padding: 30px;    
-    color:rgb(215, 212, 208)
+    color:rgb(215, 212, 208);
 /*    font-size: small;    &/
 /*  font-family: fantasy; */
     font-family: Monospace;

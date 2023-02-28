@@ -11,10 +11,14 @@
 
 
 <body>
-  <img src="https://storage.googleapis.com/afs-prod/media/e53811360eed4b8ba26b5f635d703a7c/3000.jpeg" 
-    width="200px" height="200px">
-  <h1>Welcome to the movie page by {{ name }}</h1>
-  <h2>Let's watch some movie tonight! </h3>
+  <div class="row">
+    <div class="column-l">
+      <img src="https://storage.googleapis.com/afs-prod/media/e53811360eed4b8ba26b5f635d703a7c/3000.jpeg" 
+        width="200px" height="200px">
+    </div>
+    <div class="column-r">
+      <h1>Welcome to the movie page by {{ name }}</h1>
+      <h2>Let's watch some movie tonight! </h3>
 
   <form action="/recommender">
     <p class="announce"> How would you like the recommendations to be? </p>
@@ -35,7 +39,7 @@
         required list="movie_lst">
  <!--      <label for="rating"> Rating:</label>
  -->
-      <input type="number" id="rating" name="Ratings" size="2" placeholder="1-5" 
+      <input type="number" id="rating" name="Ratings" size="4" placeholder="1-5" 
         min="1" max="5" required>
       <br><br>    
     {% endfor %}           
@@ -46,7 +50,9 @@
     <option value="{{mov}}"></option>    
     {%endfor%}       
   </datalist>
-  
+</div>
+</div>
+
 </body>
 
 </html>
